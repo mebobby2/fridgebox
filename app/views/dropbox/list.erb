@@ -1,0 +1,5 @@
+<ul>
+<% @files.each do |f| %>
+  <li><%= link_to f[:name], dropbox_download_path(file: f[:name]) %></li>
+<% end %>
+</ul>
